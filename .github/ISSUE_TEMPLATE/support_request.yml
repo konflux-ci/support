@@ -1,0 +1,84 @@
+name: Support Request
+description: File a support request for a specific application or component.
+title: "[Support]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the form below to help us route your request.
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How critical is this issue?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+        - Blocker
+    validations:
+      required: true
+
+  - type: input
+    id: reason_urgency
+    attributes:
+      label: Reason of Urgency
+      description: Please explain why this level of urgency is required.
+      placeholder: E.g., Production blocked, data loss risk...
+    validations:
+      required: false
+
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      placeholder: E.g., Build, Release, UI...
+    validations:
+      required: false
+
+  - type: input
+    id: application
+    attributes:
+      label: Application
+      description: Which application is affected?
+    validations:
+      required: false
+
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: The component you are using.
+    validations:
+      required: false
+
+  - type: input
+    id: tenant
+    attributes:
+      label: Tenant
+      description: The tenant ID or name if applicable.
+    validations:
+      required: false
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Describe your issue or question in detail.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs & Attachments
+      description: |
+        Please drag and drop log files, screenshots, or configuration files into this box.
+        (Avoid pasting large raw logs text directly; attaching the file is cleaner).
+      render: shell
+    validations:
+      required: false
