@@ -38,6 +38,38 @@ body:
     validations:
       required: false
   - type: textarea
+    id: cluster-version
+    attributes:
+      label: "Cluster version"
+      description: The cluster version in which the issue was observed
+      placeholder: A few specific words would be enough.
+    validations:
+      required: false
+  - type: textarea
+    id: konflux-version
+    attributes:
+      label: "Konflux version"
+      description: The Konflux version in which the issue was observed
+      placeholder: A few specific words would be enough.
+    validations:
+      required: false
+  - type: textarea
+    id: kubernetes-version
+    attributes:
+      label: "Kubernetes version"
+      description: The Kubernetes version in which the issue was observed
+      placeholder: A few specific words would be enough.
+    validations:
+      required: false
+  - type: textarea
+    id: openshift-version
+    attributes:
+      label: "OpenShift version"
+      description: The OpenShift version in which the issue was observed (if applicable)
+      placeholder: A few specific words would be enough.
+    validations:
+      required: false
+  - type: textarea
     id: additional-info
     attributes:
       label: "Any additional info"
