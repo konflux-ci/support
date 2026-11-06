@@ -2,6 +2,8 @@
 
 Welcome to the **Konflux Community Support** repository! 👋
 
+[![Konflux on StartupScores](https://startupscores.com/badge/konflux.svg?style=shield&v=combo&theme=dark)](https://startupscores.com/open-source/konflux)
+
 This repository is dedicated to providing support, answering questions, and resolving issues for users of the Konflux. Whether you are encountering a bug, have a configuration question, or need guidance on a specific component, the community and maintainers are here to help.
 
 ---
